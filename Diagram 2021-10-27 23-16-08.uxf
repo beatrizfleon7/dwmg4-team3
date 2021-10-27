@@ -1,0 +1,33 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>210</x><y>378</y><w>210</w><h>70</h></coordinates><panel_attributes>_Chansons_
+--
+id: number PK
+titre: varchar
+album_id: FK
+
+[waiting for message]</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>630</x><y>199</y><w>210</w><h>70</h></coordinates><panel_attributes>_Auteurs_
+--
+id: number PK
+nom: varchar
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>600</x><y>379</y><w>210</w><h>70</h></coordinates><panel_attributes>_Albums_
+--
+id: number PK
+titre: varchar
+auteur_id: FK
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>410</x><y>410</y><w>210</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+m1=1..n</panel_attributes><additional_attributes>10;10;190;10</additional_attributes></element><element><id>Relation</id><coordinates><x>740</x><y>260</y><w>50</w><h>140</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes><additional_attributes>10;120;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>870</x><y>580</y><w>210</w><h>70</h></coordinates><panel_attributes>_Utilisateurs_
+--
+username: varchar PK
+password: varchar</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>560</x><y>580</y><w>210</w><h>70</h></coordinates><panel_attributes>_Playlists_
+--
+id: number PK
+username: FK
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>760</x><y>610</y><w>130</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes><additional_attributes>10;10;110;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>200</x><y>580</y><w>210</w><h>70</h></coordinates><panel_attributes>_Chansons_Playlists_
+--
+id: number PK
+chanson_id: FK
+playlist_id: FK
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>300</x><y>440</y><w>50</w><h>160</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes><additional_attributes>10;140;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>400</x><y>610</y><w>180</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes><additional_attributes>10;10;160;10</additional_attributes></element></diagram>
